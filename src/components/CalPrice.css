@@ -1,0 +1,42 @@
+/* PriceCalculator.css */
+.price-calculator {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .card {
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .card-body {
+    padding: 30px;
+  }
+  
+  h4 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #007bff;
+  }
+  
+  .form-label {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .form-control {
+    height: 45px;
+    font-size: 0.95rem;
+  }
+  
+  button.btn-primary {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 5px;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #0056b3;
+  }
+  

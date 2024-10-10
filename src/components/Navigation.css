@@ -1,0 +1,10 @@
+.footer{
+    background-color: #29A69A;
+    color: white;
+}
+.sticky-top {
+    font-size: 16px; /* Sets the font size to a consistent size for all elements */
+}
+.nav-link, .btn {
+    font-size: inherit; /* Inherits the font size to buttons and navigation links */
+}
