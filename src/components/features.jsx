@@ -3,6 +3,7 @@ import "./features.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faBookmark, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle as farCheckCircle } from '@fortawesome/free-regular-svg-icons';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 export const Features = (props) => {
   const iconStyle = { color: '#FC4910' };
@@ -366,7 +367,7 @@ export const Features = (props) => {
 {/* <!-- Include Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 next */}
-<section className="container my-5">
+<section className="container">
   <div className="row">
       <div className="col-12 text-center mb-4">
           <h2>The Most Affordable Assignment Writing Service</h2>
@@ -375,7 +376,7 @@ next */}
           <p><strong>Academia Nerds</strong> provides affordable and top-quality assignment writing services to our clients. Our experts are committed to high-quality work, benefiting students interested in having their papers written. <strong>Academia Nerds</strong> offers services in essay writing, discussion posts, term papers, research papers, presentations of all forms, team assignments, case studies, speech writing, capstone projects, Q&A, online classNamees, online quizzes, and exams.</p>
           <p>Our writing experts have extensive knowledge and expertise developed over 10+ years in their fields.</p>
           <p><strong>Academia Nerds</strong> assignment writing services are distinguished in the writing industry. We have:</p>
-          <ul>
+          <ul style={{fontSize: '20px'}}>
               <li>Exceptional online writing customer services</li>
               <li>Top-notch quality papers and scores</li>
               <li>Flexibility in writing and deadlines as per client needs</li>
@@ -407,44 +408,44 @@ next */}
   
   <div className="row">
       <div className="col-md-6">
-          <ul className="list-unstyled">
+          <ul className="list" style={{fontSize: '20px'}}>
               <li className="mb-3">
-                  <i className="fas fa-check-circle"></i> 
+                  <FontAwesomeIcon icon={faCheckCircle}  />
                   Every piece of our work is professionally prepared while a team of editors ensures quality by proofreading and reviewing the paper instructions to ensure grammar and formatting are adhered to before delivery.
               </li>
               <li className="mb-3">
-                  <i className="fas fa-check-circle"></i> 
+                  <FontAwesomeIcon icon={faCheckCircle}  />
                   All <span style={{whiteSpace:'normal'}}>Academianerds</span>.com assignments are constantly reviewed for plagiarism to ensure originality, and plagiarism reports are delivered upon request.
               </li>
               <li className="mb-3">
-                  <i className="fas fa-check-circle"></i> 
+                  <FontAwesomeIcon icon={faCheckCircle}  />
                   Every client is invited to provide an honest review about our services to help others understand our credibility.
               </li>
           </ul>
       </div>
       
       <div className="col-md-6">
-          <ul className="list-unstyled">
+          <ul className="list" style={{fontSize: '20px'}}>
               <li className="mb-3">
-                  <i className="fas fa-check-circle"></i> 
+                  <FontAwesomeIcon icon={faCheckCircle}  />
                   Extraordinary customer support service is provided on a 24/7 basis.
               </li>
               <li className="mb-3">
-                  <i className="fas fa-check-circle"></i> 
+                  <FontAwesomeIcon icon={faCheckCircle}  />
                   Experience professional assignment help services with us.
               </li>
               <li className="mb-3">
-                  <i className="fas fa-check-circle"></i> 
+                  <FontAwesomeIcon icon={faCheckCircle}  />
                   Fast delivery. Our proficiency over the years enables us to deliver high-quality assignment services within specified deadlines.
               </li>
               <li className="mb-3">
                   <a href="/order">
-                      <i className="fas fa-check-circle"></i> 
+                      <FontAwesomeIcon icon={faCheckCircle}  />
                       Affordable prices. Pocket-friendly prices without compromising quality.
                   </a>
               </li>
               <li className="mb-3">
-                  <i className="fas fa-check-circle"></i> 
+                  <FontAwesomeIcon icon={faCheckCircle}  />
                   Privacy. Confidentiality is highly enhanced.
               </li>
           </ul>

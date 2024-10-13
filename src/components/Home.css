@@ -1,5 +1,17 @@
-/* .section-container {
-    margin-left: 20px; 
+/* Scoping background image to this specific container */
+.home-container {
+    height: 80vh;
+    background-image: url("https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+.section-container {
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .text-section {
@@ -9,18 +21,35 @@
 
 .price-section {
     flex: 2; 
-    margin-left: 200px; 
+    margin-left: 160px;
+    background-color: rgba(27, 31, 38, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .card {
     box-shadow: 0 4px 8px rgba(30, 29, 29, 0.1);
     background-color: #2e2a2a;
-} */
- /* .container-fluid{
-    height: 50%;
-    background-image: url("https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg");
- } */
+}
 
+.form-group {
+    color: white;
+}
+
+.form-control {
+    background-color: black;
+    color: white;
+}
+
+.text-right {
+    color: white;
+}
+
+.opc1btn, .op-sm-12 {
+    background-color: #FCB84E;
+}
+
+/* Media query for responsiveness */
 @media (max-width: 768px) {
     .d-flex {
         flex-direction: column;

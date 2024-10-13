@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navigation } from "./components/navigation";
+import  Navigation  from "./components/navigation";
 import { Header } from "./components/header";
 import { Features } from "./components/features";
 import { About } from "./components/about";
@@ -24,6 +24,7 @@ import LoginForm from "./components/Login";
 import ResetPasswordForm from "./components/ResetPassword";
 import OrderComponen from "./components/OrderComponen";
 import OrderFormComponent from "./components/FormsComponents";
+import Navbar from "./components/Navbar";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -39,8 +40,11 @@ const App = () => {
   return (
     <Router>
       <div>
-        <Navigation /> {/* This will always stay visible */}
+        <Navigation /> 
+        {/* This will always stay visible */}
         {/* <Features /> */}
+        {/* <Navigation /> */}
+        <Navbar />
         <Routes>
           <Route path="/" element={<Header data={landingPageData.Header} />} />
           <Route path="/login" element={<LoginForm />} />
