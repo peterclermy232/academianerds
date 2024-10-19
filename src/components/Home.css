@@ -20,16 +20,17 @@
 }
 
 .price-section {
-    flex: 2; 
-    margin-left: 160px;
-    background-color: rgba(27, 31, 38, 0.5);
+    /* flex: 2;  */
+    /* margin-left: 120px; */
+    background-color: rgba(116, 121, 131, 0.5);
     padding: 20px;
     border-radius: 10px;
+    margin-right: 160px;
 }
 
 .card {
-    box-shadow: 0 4px 8px rgba(30, 29, 29, 0.1);
-    background-color: #2e2a2a;
+    box-shadow: 0 4px 8px rgba(148, 146, 146, 0.1);
+    background-color: #777373;
 }
 
 .form-group {

@@ -1,0 +1,14 @@
+.custom-input {
+    width: 60%;
+  }
+  
+  textarea.form-control,
+  input.form-control,
+  select.form-control {
+    width: 100%; /* Ensure elements take the full width of the custom container */
+  }
+  
+  .btn-group .btn {
+    white-space: normal; /* This prevents button text from being squished */
+  }
+  

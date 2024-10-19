@@ -31,7 +31,7 @@ const HomeComponent = () => {
             </div>
 
             {/* Right Section: Calculate Price Form with Card Background */}
-            <div className="card price-section p-4">
+            <div className="card price-section">
                 <h4 className="price">Calculate Price</h4>
                 <form>
                     <div className="form-group">

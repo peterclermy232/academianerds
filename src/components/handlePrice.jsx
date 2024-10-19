@@ -2,6 +2,7 @@ import React, { Component, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
+import "./handlePrice.css"
 
 // Error Boundary Component
 class ErrorBoundary extends Component {
@@ -57,7 +58,7 @@ const HandlePrice = () => {
         {/* Number of Pages */}
         <div className="form-group row">
           <label className="col-sm-3">Number of Pages</label>
-          <div className="input-group col-sm-4">
+          <div className="input-group col-sm-4 custom-input">
             <button
               type="button"
               className="btn btn-default border-default"
@@ -87,7 +88,7 @@ const HandlePrice = () => {
         {/* Word Spacing */}
         <div className="form-group row">
           <label className="col-sm-3">Word Spacing</label>
-          <div className="col-sm-9">
+          <div className="col-sm-8">
             <div className="btn-group" data-toggle="buttons">
               <label className={`btn btn-default ${orderSpacing === '1#Double' ? 'active' : ''}`}>
                 <input
@@ -116,7 +117,7 @@ const HandlePrice = () => {
         {/* Currency */}
         <div className="form-group row">
           <label className="col-sm-3">Currency</label>
-          <div className="col-sm-9">
+          <div className="col-sm-8">
             <div className="btn-group" data-toggle="buttons">
               <label className={`btn btn-default ${orderCurrency === '1#USD' ? 'active' : ''}`}>
                 <input
@@ -165,7 +166,7 @@ const HandlePrice = () => {
         {/* Sources */}
         <div className="form-group row">
           <label className="col-sm-3">Sources</label>
-          <div className="input-group col-sm-5">
+          <div className="input-group col-sm-5 custom-input">
             <button
               type="button"
               className="btn btn-default border-default"
@@ -195,7 +196,7 @@ const HandlePrice = () => {
         {/* PowerPoint Slides */}
         <div className="form-group row">
           <label className="col-sm-3">PowerPoint Slides</label>
-          <div className="input-group col-sm-5">
+          <div className="input-group col-sm-5 custom-input">
             <button
               type="button"
               className="btn btn-default border-default"
@@ -253,25 +254,26 @@ const HandlePrice = () => {
         {/* Writer Category */}
         <div className="form-group row">
           <label className="col-lg-3 col-md-12">Writer Category</label>
-          <div className="col-lg-9 col-md-12">
+          <div className="col-lg-9">
             <div className="btn-group" data-toggle="buttons">
-              {['Standard', 'Premium', 'Platinum'].map((category) => (
-                <label key={category} className="btn btn-default">
-                  <input type="radio" name="order_writer_category" value={category} />
-                  {category}
-                </label>
-              ))}
+              <label className="btn btn-default active">
+                <input
+                  type="radio"
+                  name="order_writerCategory"
+                  value="Standard"
+                  defaultChecked
+                />
+                Standard
+              </label>
+              <label className="btn btn-default">
+                <input type="radio" name="order_writerCategory" value="Premium" />
+                Premium
+              </label>
+              <label className="btn btn-default">
+                <input type="radio" name="order_writerCategory" value="Top 10" />
+                Top 10 Writers
+              </label>
             </div>
-          </div>
-        </div>
-
-        {/* Calculate Total Price */}
-        <div className="form-group row">
-          <label className="col-sm-3">Total Price</label>
-          <div className="col-sm-9">
-            <h4 className="text-success">
-              ${((orderPages * 11.99 + orderSources * 2.99 + orderPPTSlides * 4.99) * parseFloat(orderCurrency)).toFixed(2)}
-            </h4>
           </div>
         </div>
       </div>

@@ -1,0 +1,10 @@
+.custom-input {
+    width: 60%;
+  }
+  
+  .custom-input .input-number {
+    width: 80px;
+  }
+  .rc-orderform__step-flag{
+    text-align: center;
+  }

@@ -479,7 +479,7 @@ next */}
         
             <div className="col-md-3" style={liststyle}>
                 <h4>WHAT WE OFFER</h4>
-                <ul className="list-unstyled" style={liststyle}>
+                <ul className="list-unstyled" style={{ fontSize: '20px' }}>
                     <li><a href="/academictips">Amazing Academic Tips</a></li>
                     <li><a href="/privacy-policy/">Privacy Policy</a></li>
                     <li><a href="/money-back-guarantee/">Money Back Guarantee</a></li>
@@ -492,7 +492,7 @@ next */}
         </div>
             <div className="col-md-3" style={liststyle}>
                 <h5>OUR SERVICES</h5>
-                <ul className="list-unstyled" style={liststyle}>
+                <ul className="list-unstyled" style={{ fontSize: '20px' }}>
                     <li><a href="/how-our-research-paper-writing-service-works/">Research Papers</a></li>
                     <li><a href="/academic-help/">Academic Help</a></li>
                     <li><a href="/lab-report/">Lab Report</a></li>
@@ -503,7 +503,7 @@ next */}
             </div>
             <div className="col-md-3 d-none d-md-block" style={liststyle}>
                 <h5>ADDITIONAL SERVICES</h5>
-                <ul className="list-unstyled" style={liststyle}>
+                <ul className="list-unstyled" style={{ fontSize: '20px' }}>
                     <li><a href="/critical-thinking/">Critical Thinking</a></li>
                     <li><a href="/analysis-essay/">Analysis Essay</a></li>
                     <li><a href="/admission-letter/">Admission Letter</a></li>
@@ -516,7 +516,7 @@ next */}
             </div>
             <div className="col-md-3 d-none d-md-block" style={liststyle}>
                 <h5>RESEARCH RESOURCES</h5>
-                <ul className="list-unstyled" style={liststyle}>
+                <ul className="list-unstyled" style={{ fontSize: '20px' }}>
                     <li><a href="/buy-research-papers/">Buy Research Papers</a></li>
                     <li><a href="/pay-for-research-paper/">Pay for Research Paper</a></li>
                     <li><a href="/research-papers-writing/">Research Papers Writing</a></li>
